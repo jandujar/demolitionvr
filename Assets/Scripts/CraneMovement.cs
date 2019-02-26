@@ -92,16 +92,16 @@ public class CraneMovement : MonoBehaviour
         else if (mesh_Arm.transform.rotation.eulerAngles.z < 289)
             mesh_Arm.transform.rotation = Quaternion.Euler(new Vector3(mesh_Arm.transform.rotation.eulerAngles.x, mesh_Arm.transform.rotation.eulerAngles.y, 289));
 
-        Debug.Log(mesh_Arm.transform.rotation.eulerAngles);
+        Debug.Log(craneArm.transform.localRotation.eulerAngles);
 
 
         //Upper Crane rotation
         craneArm.Rotate(Vector3.forward * (armCraneLateralRotationAxis * rotationSpeed) * Time.deltaTime * 2);
 
-        if (craneArm.transform.localRotation.eulerAngles.y > 119 && craneArm.transform.localRotation.eulerAngles.y < 180)
-            craneArm.transform.localRotation = Quaternion.Euler(new Vector3(craneArm.localRotation.eulerAngles.x , 119 , craneArm.localRotation.eulerAngles.z));
-        else if (craneArm.transform.localRotation.eulerAngles.y < 344 && craneArm.transform.localRotation.eulerAngles.y > 180)
-            craneArm.transform.localRotation = Quaternion.Euler(new Vector3(craneArm.transform.localRotation.eulerAngles.x, 344, craneArm.localRotation.eulerAngles.z));
+        if (craneArm.transform.localRotation.eulerAngles.z > 135 && craneArm.transform.localRotation.eulerAngles.z < 180)
+            craneArm.transform.localRotation = Quaternion.Euler(new Vector3(craneArm.localRotation.eulerAngles.x , craneArm.localRotation.eulerAngles.y , 135 ));
+        else if (craneArm.transform.localRotation.eulerAngles.z < 344 && craneArm.transform.localRotation.eulerAngles.z > 180)
+            craneArm.transform.localRotation = Quaternion.Euler(new Vector3(craneArm.transform.localRotation.eulerAngles.x, craneArm.transform.localRotation.eulerAngles.x, 344));
 
     }
 }
