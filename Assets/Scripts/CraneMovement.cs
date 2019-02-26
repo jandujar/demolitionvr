@@ -92,9 +92,5 @@ public class CraneMovement : MonoBehaviour
         //Upper Crane rotation
         upperCrane.Rotate(Vector3.forward * (upperCraneRotationAxis * rotationSpeed) * Time.deltaTime * 2);
 
-
-
-        Debug.Log(craneArm.transform.rotation.eulerAngles);
-
     }
 }

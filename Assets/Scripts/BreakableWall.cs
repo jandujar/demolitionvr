@@ -9,14 +9,12 @@ public class BreakableWall : MonoBehaviour
      bool moving=false;
      float counter=10;
     private void OnTriggerEnter(Collider other) {
-        wall.SetActive(false);
+        if(other.gameObject.tag!="BuildingObject"){
+            wall.SetActive(false);
         bricks.SetActive(true);
-        moving=true;
-    }
-    private void Update() {
-        counter-=Time.deltaTime;
-        if(moving){
 
         }
+        
     }
+
 }

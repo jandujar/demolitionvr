@@ -14,12 +14,12 @@ public class InputManager : Singleton<InputManager> {
 
     public float GetAxisHorizontal2()
     {
-        return Input.GetAxis("JoystickRightHorizontal");
+        return Input.GetAxis("JRH");
     }
 
     public float GetAxisVertical2()
     {
-        return Input.GetAxis("JoystickRightVertical");
+        return Input.GetAxis("JRV");
     }
 
     public float GetAxisHorizontalMouse()

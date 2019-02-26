@@ -17,6 +17,7 @@ public class BreakableObject : MonoBehaviour
             rb.constraints=RigidbodyConstraints.None;
             moving=true;
             lastPosition=gameObject.GetComponent<Transform>();
+            
         }
         
     }
