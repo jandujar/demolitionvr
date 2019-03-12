@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6588145843073013347}
   m_Layer: 0
   m_Name: tile_sw
-  m_TagString: Untagged
+  m_TagString: BuildingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &1385536598862329856
 GameObject:
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4852214485379176587}
   m_Layer: 0
   m_Name: tile_center
-  m_TagString: Untagged
+  m_TagString: BuildingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,7 +242,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &3254527094312485667
 GameObject:
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 7743304143454812089}
   m_Layer: 0
   m_Name: tile_se
-  m_TagString: Untagged
+  m_TagString: BuildingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,7 +364,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &4937017442630175103
 GameObject:
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 1209280283324859707}
   m_Layer: 0
   m_Name: tile_ne
-  m_TagString: Untagged
+  m_TagString: BuildingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,7 +486,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &6837513925189767232
 GameObject:
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 8110752136092298023}
   m_Layer: 0
   m_Name: tile_nw
-  m_TagString: Untagged
+  m_TagString: BuildingObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -608,7 +608,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &7936956383165592095
 GameObject:
