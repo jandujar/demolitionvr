@@ -25,8 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361830146}
-  m_LocalRotation: {x: -0, y: 0.000000014901159, z: 0.00000004470348, w: 1}
-  m_LocalPosition: {x: 14.349985, y: 91.10004, z: -0.20001407}
+  m_LocalRotation: {x: -0.0000000037252894, y: 0.000000012107191, z: 0.000000021898808,
+    w: 1}
+  m_LocalPosition: {x: 14.349931, y: 91.1001, z: -0.20001501}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7948716083222844483}
@@ -59,7 +60,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -8.39004, y: 11.170037, z: 0.000008097884}
+  m_ConnectedAnchor: {x: -8.390034, y: 11.170028, z: -7.664978e-13}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -108,8 +109,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855543495}
-  m_LocalRotation: {x: -0, y: 0.000000029802319, z: 0.00000004470348, w: 1}
-  m_LocalPosition: {x: 22.739996, y: 79.93004, z: -0.2000236}
+  m_LocalRotation: {x: -0.0000000037252894, y: 0.000000012107191, z: 0.000000021898808,
+    w: 1}
+  m_LocalPosition: {x: 22.739927, y: 79.93011, z: -0.20001434}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1082081986}
@@ -143,7 +145,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -10.860002, y: 14.140046, z: -0.000015246273}
+  m_ConnectedAnchor: {x: -10.860003, y: 14.140054, z: -0.000014194007}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -227,7 +229,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 8.469342, y: 5.365241, z: 1.5933985}
+  m_ConnectedAnchor: {x: 8.469342, y: 5.365247, z: 1.5933994}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2078,7 +2080,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -11.270011, y: 14.370004, z: 0.20001267}
+  m_ConnectedAnchor: {x: -11.269979, y: 14.369965, z: 0.20001361}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2109,6 +2111,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 655563705202731025}
     m_Modifications:
+    - target: {fileID: 1000802166313625297, guid: fdb4380bd19c9f1439eef5dfe2951d4a,
+        type: 3}
+      propertyPath: m_Name
+      value: ControlPanel (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3601835115671585976, guid: fdb4380bd19c9f1439eef5dfe2951d4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2163,11 +2170,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000802166313625297, guid: fdb4380bd19c9f1439eef5dfe2951d4a,
-        type: 3}
-      propertyPath: m_Name
-      value: ControlPanel (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb4380bd19c9f1439eef5dfe2951d4a, type: 3}
