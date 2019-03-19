@@ -6,10 +6,27 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: 02 - Default
+    2100002: 01 - Default
+    2100004: 07 - Default
     2300000: //RootNode
     3300000: //RootNode
     4300000: Terraza2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 07c9d4353d1ef9b4f811ead419464e2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 7c4665455dd11c144a612de90dd6d96b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 07 - Default
+    second: {fileID: 2100000, guid: 2432b715bf2192f45935fd143a59ffc5, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
