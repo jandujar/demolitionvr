@@ -24,9 +24,9 @@ public class RopeCalculator : MonoBehaviour
         {
             tempDistance = joints[i + 1].position - joints[i].position;
             cylindersPositions[i] = joints[i].position + tempDistance / 2;
-            //cylindersRotation[i] = new Vector3(Mathf.Rad2Deg * Mathf.Atan2(tempDistance.x, tempDistance.y) , 0, Mathf.Rad2Deg * Mathf.Atan2(tempDistance.z, tempDistance.y));
+            cylindersRotation[i] = new Vector3(Mathf.Rad2Deg * Mathf.Atan2(tempDistance.z, tempDistance.y) , 0, Mathf.Rad2Deg * Mathf.Atan2(tempDistance.x, tempDistance.y));
             cylinders[i].position = cylindersPositions[i];
-            //cylinders[i].rotation = Quaternion.Euler(cylindersRotation[i]);
+            cylinders[i].rotation = Quaternion.Euler(cylindersRotation[i]);
         }
     }
 
