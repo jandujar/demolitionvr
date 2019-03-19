@@ -14,6 +14,9 @@ ModelImporter:
     400006: Box004
     400008: //RootNode
     2100000: No Name
+    2100002: 'Material #25'
+    2100004: 01 - Default
+    2100006: 02 - Default
     2300000: Box002
     2300002: Box003
     2300004: Box004
@@ -25,7 +28,17 @@ ModelImporter:
     4300000: Box002
     4300002: Box003
     4300004: Box004
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 7dc0da68618503341b6bea5298a44056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 1b34992917d1a2e419710211e629d024, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
