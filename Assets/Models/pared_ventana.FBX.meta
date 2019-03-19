@@ -6,13 +6,31 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: No Name
+    2100002: 02 - Default
+    2100004: 01 - Default
+    2100006: 03 - Default
     2300000: //RootNode
     3300000: //RootNode
     4300000: Windows
     4300002: Wall
     7400000: Take 001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 7dc0da68618503341b6bea5298a44056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default
+    second: {fileID: 2100000, guid: 1b34992917d1a2e419710211e629d024, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: 4ccdb3fdc4900824ca684a676ce86e5e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
