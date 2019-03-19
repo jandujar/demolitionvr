@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class CraneMovement : MonoBehaviour
     [SerializeField] Transform craneArm;
     [SerializeField] Transform upperCrane, Crane, mesh_Arm;
 
+    [SerializeField] GameObject leverRightMovement, leverLeftMovement, leverCraneHeight, leverCraneTrasversalMovement;
+
     public float speed = 5;
     public float rotationSpeed = 10;
     public float armCraneSpeed = 8;
@@ -16,8 +19,8 @@ public class CraneMovement : MonoBehaviour
     public bool resetRotation = false;
 
 
-    float leftAxis, rightAxis;
-    float leftWheelMovement, rightWheelMovement, armCraneLateralRotationAxis, armCraneAxis;
+    float leftAxis, rightAxis, armCraneLateralRotationAxis, armCraneAxis;
+    float leftWheelMovement, rightWheelMovement;
     
 
     // Start is called before the first frame update
@@ -43,12 +46,8 @@ public class CraneMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        leftAxis = rightAxis = 0;
-        armCraneLateralRotationAxis = 0;
-        armCraneAxis = 0;
-
-
         //TEMP INPUTS, here we will manage with the levers the value of each axis variable
+        /*
         leftAxis = InputManager.Instance.GetAxisVertical();
         rightAxis = InputManager.Instance.GetAxisVertical2();
 
@@ -61,18 +60,15 @@ public class CraneMovement : MonoBehaviour
             armCraneAxis = 1;
         else if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON4))
             armCraneAxis = -1;
+        */
 
 
-        if (rightAxis > 1.0f)
-            rightAxis = 1.0f;
-        else if(rightAxis < -1.0f)
-            rightAxis = -1.0f;
-        if (leftAxis > 1.0f)
-            rightAxis = 1.0f;
-        else if (leftAxis < -1.0f)
-            rightAxis = -1.0f;
+        UpdateLeverInputs();
+        UpdateMovements();
+    }
 
-
+    private void UpdateMovements()
+    {
         //MOVEMENT LEVERS
         leftWheelMovement = speed * leftAxis;
         rightWheelMovement = speed * rightAxis;
@@ -85,10 +81,10 @@ public class CraneMovement : MonoBehaviour
 
         //Crane LEVER
         mesh_Arm.Rotate(Vector3.forward * (armCraneAxis * armCraneSpeed) * Time.deltaTime * 2);
-        
-        
+
+
         if (mesh_Arm.transform.rotation.eulerAngles.z > 336)
-            mesh_Arm.transform.rotation = Quaternion.Euler(new Vector3 (mesh_Arm.transform.rotation.eulerAngles.x, mesh_Arm.transform.eulerAngles.y, 336));
+            mesh_Arm.transform.rotation = Quaternion.Euler(new Vector3(mesh_Arm.transform.rotation.eulerAngles.x, mesh_Arm.transform.eulerAngles.y, 336));
         else if (mesh_Arm.transform.rotation.eulerAngles.z < 289)
             mesh_Arm.transform.rotation = Quaternion.Euler(new Vector3(mesh_Arm.transform.rotation.eulerAngles.x, mesh_Arm.transform.rotation.eulerAngles.y, 289));
 
@@ -99,9 +95,31 @@ public class CraneMovement : MonoBehaviour
         craneArm.Rotate(Vector3.forward * (armCraneLateralRotationAxis * rotationSpeed) * Time.deltaTime * 2);
 
         if (craneArm.transform.localRotation.eulerAngles.z > 135 && craneArm.transform.localRotation.eulerAngles.z < 180)
-            craneArm.transform.localRotation = Quaternion.Euler(new Vector3(craneArm.localRotation.eulerAngles.x , craneArm.localRotation.eulerAngles.y , 135 ));
+            craneArm.transform.localRotation = Quaternion.Euler(new Vector3(craneArm.localRotation.eulerAngles.x, craneArm.localRotation.eulerAngles.y, 135));
         else if (craneArm.transform.localRotation.eulerAngles.z < 344 && craneArm.transform.localRotation.eulerAngles.z > 180)
             craneArm.transform.localRotation = Quaternion.Euler(new Vector3(craneArm.transform.localRotation.eulerAngles.x, craneArm.transform.localRotation.eulerAngles.x, 344));
+
+    }
+
+    private void UpdateLeverInputs()
+    {
+        leftAxis = rightAxis = 0;
+        armCraneLateralRotationAxis = 0;
+        armCraneAxis = 0;
+
+        rightAxis = leverRightMovement.GetComponent<SlideLever>().valueLever;
+        leftAxis = leverLeftMovement.GetComponent<SlideLever>().valueLever;
+        armCraneLateralRotationAxis = leverCraneTrasversalMovement.GetComponent<SlideLever>().valueLever;
+        armCraneAxis = leverCraneHeight.GetComponent<SlideLever>().valueLever;
+
+        if (rightAxis > 1.0f)
+            rightAxis = 1.0f;
+        else if (rightAxis < -1.0f)
+            rightAxis = -1.0f;
+        if (leftAxis > 1.0f)
+            rightAxis = 1.0f;
+        else if (leftAxis < -1.0f)
+            rightAxis = -1.0f;
 
     }
 }
