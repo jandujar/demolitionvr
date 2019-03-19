@@ -7,6 +7,7 @@ public class BreakTitleMenu : MonoBehaviour {
 
     [SerializeField] GameObject wall;
     private bool moveBall;
+    [SerializeField] Animator fadeOutAnim;
 
     // Start is called before the first frame update
     void Start() {
@@ -29,11 +30,18 @@ public class BreakTitleMenu : MonoBehaviour {
         {
             child.GetComponent<Rigidbody>().isKinematic = false;
         }
-        Invoke("goToGameScene", 3);
+        Invoke("fadeOut", 3);
+        Invoke("goToGameScene", 5);
+        
     }
 
     private void goToGameScene() {
         SceneManager.LoadScene("Game");
+    }
+
+    private void fadeOut()
+    {
+        fadeOutAnim.SetBool("fade", true);
     }
 
 }
