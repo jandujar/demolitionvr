@@ -10,13 +10,19 @@ ModelImporter:
     400002: C_S
     400004: //RootNode
     2100000: No Name
+    2100002: 01 - Default
     2300000: C_C
     2300002: C_S
     3300000: C_C
     3300002: C_S
     4300000: C_S
     4300002: C_C
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 415dfb90c51c3d9478a5e9c0e20743eb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
