@@ -91,10 +91,6 @@ public class CraneMovement : MonoBehaviour
         armCraneLateralRotationAxis = 0;
         armCraneAxis = 0;
 
-        if(InputManager.Instance.GetTriggerVR()){
-            Debug.Log("Pressed the trigger button");
-        }
-
         //TEMP INPUTS, here we will manage with the levers the value of each axis variable
 
 #if TEMP_INPUTS

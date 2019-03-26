@@ -44,8 +44,12 @@ public class InputManager : Singleton<InputManager> {
     }
 
 
-    public bool GetTriggerVR(){
+    public bool GetTriggerVRLeftHand(){
         return Input.GetAxis("PrimaryIndexTrigger")>0.5f;
+    }
+
+    public bool GetTriggerVRRightHand(){
+        return Input.GetAxis("SecondaryIndexTrigger")>0.5f;
     }
 
 

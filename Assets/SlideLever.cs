@@ -5,8 +5,8 @@ public class SlideLever : MonoBehaviour
 {
 
     //public EVRButtonId buttonToTrigger = EVRButtonId.k_EButton_SteamVR_Trigger;
-    public SteamVR_Action_Boolean clickGrab;
-    public Transform controller;
+    //public  clickGrab;
+    //public Transform controller;
     public Transform lever;
 
     [SerializeField] Transform maxPoint;
@@ -18,18 +18,14 @@ public class SlideLever : MonoBehaviour
     float[] anchorPoints = new float[3];
     public float snapDistance = 0.05f;
     protected Transform controllerTransform;
-
     public delegate void SlideLeverEvent(int position);
     public static event SlideLeverEvent OnLeverSnap;
     //----------------------------------------------
 
-
     [Header("Maximo y minimo")]
     [Range(-1,1)]
     public float valueLever = 0;
-
     public float position = 0;
-
 
     private void Start()
     {
@@ -40,39 +36,6 @@ public class SlideLever : MonoBehaviour
         anchorPoints[2] = maxZ;
         
     }
-
-    public bool isclickGrab()
-    {
-        Debug.Log("GRAB!");
-        return clickGrab.GetState(SteamVR_Input_Sources.Any);
-    }
-    //----------------------------------------------
-
-    public void ButtonPressDown(SteamVR_Skeleton_Pose_Hand controller)//(EVRButtonId button, VRControllerInput controller)
-    {
-        //If button pressed is desired "trigger" button
-        if (isclickGrab())
-        {
-            //controllerTransform = controller.gameObject.transform;
-            controllerTransform.position = controller.position;
-            controllerTransform.rotation = controller.rotation;
-        }
-    }
-
-    public void ButtonPressUp(SteamVR_Skeleton_Pose_Hand controller)//(EVRButtonId button, VRControllerInput controller)
-    {
-        //If button pressed is desired "trigger" button
-        if (isclickGrab())
-        {
-            controllerTransform = null;
-
-            //Attempt to snap lever into a slot
-            SnapToPosition();
-        }
-    }
-
-
-
     protected void SnapToPosition()
     {
         //Cycle through each predefined anchor point
@@ -95,11 +58,10 @@ public class SlideLever : MonoBehaviour
        
     public void Update()
     {
-        /*
-        position = valueLever * maxZ;
-        lever.transform.localPosition = new Vector3(lever.transform.localPosition.x, lever.transform.localPosition.y,position);
-        */
-
+        
+        //position = valueLever * maxZ;
+        //lever.transform.localPosition = new Vector3(lever.transform.localPosition.x, lever.transform.localPosition.y,position);
+        
         //If the user is "grabbing" the lever
         if (controllerTransform != null)
         {
@@ -121,11 +83,34 @@ public class SlideLever : MonoBehaviour
             //hacer el movimiento de la demoledora
         }
         
-    }
 
-    private void OnTriggerEnter(Collider other)
-    {
+        if(InputManager.Instance.GetTriggerVRRightHand()){
+            Debug.Log("Pressed the trigger right button");
+        }
+
+        if(InputManager.Instance.GetTriggerVRLeftHand()){
+            Debug.Log("Pressed the trigger left button");
+        }
         
     }
 
+     
+    private void OnTriggerStay(Collider other){
+
+        if(other.gameObject.tag == "Hand"){
+            
+            if(InputManager.Instance.GetTriggerVRRightHand()){
+                controllerTransform.position = other.gameObject.transform.position;
+                controllerTransform.rotation = other.gameObject.transform.rotation;
+            }
+        }
+    }
+
+    private void onTriggerExit(Collider other){
+        if(other.gameObject.tag == "Hand"){
+            SnapToPosition();
+            controllerTransform = null;
+        }
+
+    }
 }
