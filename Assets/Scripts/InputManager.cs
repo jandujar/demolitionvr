@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class InputManager : Singleton<InputManager> {
 
+    public bool IsXRConnected()
+    {
+        return XRDevice.isPresent;
+    }
     public float GetAxisHorizontal(){
         return Input.GetAxis("Horizontal");
     }
