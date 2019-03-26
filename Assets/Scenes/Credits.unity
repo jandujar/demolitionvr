@@ -1617,6 +1617,11 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5385781762982393706, guid: d1d58c07f0bef274988c07762eee0d19,
+        type: 3}
+      propertyPath: far clip plane
+      value: 20000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1d58c07f0bef274988c07762eee0d19, type: 3}
 --- !u!1 &746505111

@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class BallAudio : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+    [SerializeField] AudioClip[] ballAudios;
+    void OnCollisionEnter(Collision collision){
+        if(collision.gameObject.tag == "BuildingObject"){
+            AudioManager.Instance.PlayAudio(ballAudios[0], transform);
+        }
         
     }
 }
