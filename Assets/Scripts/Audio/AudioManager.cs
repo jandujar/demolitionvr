@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager:Singleton<AudioManager>
 {
-    public static void PlayAudio(AudioClip _clip, Transform _position){
+    public void PlayAudio(AudioClip _clip, Transform _position){
         GameObject tempObj = Instantiate(Resources.Load("AudioInstance") as GameObject, _position);
         tempObj.GetComponent<AudioSource>().clip = _clip;
         tempObj.GetComponent<AudioInstanceManager>().PlaySound();
