@@ -8826,6 +8826,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5889066817740590326}
     m_Modifications:
+    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
+        type: 3}
+      propertyPath: m_Name
+      value: ledge
+      objectReference: {fileID: 0}
     - target: {fileID: 164656957465313506, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8880,11 +8885,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
-        type: 3}
-      propertyPath: m_Name
-      value: ledge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f, type: 3}
@@ -9743,6 +9743,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5889066817740590326}
     m_Modifications:
+    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
+        type: 3}
+      propertyPath: m_Name
+      value: ledge (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 164656957465313506, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9807,11 +9812,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
-        type: 3}
-      propertyPath: m_Name
-      value: ledge (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f, type: 3}
@@ -11256,6 +11256,11 @@ PrefabInstance:
       propertyPath: bricks
       value: 
       objectReference: {fileID: 2667848114714525427}
+    - target: {fileID: 2478353250053390433, guid: 96d3958abdee87b48acafaf9fa706438,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6907477055273220927, guid: 96d3958abdee87b48acafaf9fa706438,
         type: 3}
       propertyPath: wall
@@ -11296,6 +11301,11 @@ PrefabInstance:
       propertyPath: bricks
       value: 
       objectReference: {fileID: 4352482712082537692}
+    - target: {fileID: 3654300421544232778, guid: 96d3958abdee87b48acafaf9fa706438,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5683415890618005004, guid: 96d3958abdee87b48acafaf9fa706438,
         type: 3}
       propertyPath: wall
@@ -11316,6 +11326,11 @@ PrefabInstance:
       propertyPath: bricks
       value: 
       objectReference: {fileID: 8310757176241359301}
+    - target: {fileID: 8378909977163583776, guid: 96d3958abdee87b48acafaf9fa706438,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8569398971913387887, guid: 96d3958abdee87b48acafaf9fa706438,
         type: 3}
       propertyPath: wall
@@ -11356,6 +11371,11 @@ PrefabInstance:
       propertyPath: bricks
       value: 
       objectReference: {fileID: 1762475067230249460}
+    - target: {fileID: 7247859438540133899, guid: 96d3958abdee87b48acafaf9fa706438,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1792099860941295247, guid: 96d3958abdee87b48acafaf9fa706438,
         type: 3}
       propertyPath: wall
@@ -14884,6 +14904,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5889066817740590326}
     m_Modifications:
+    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
+        type: 3}
+      propertyPath: m_Name
+      value: ledge (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 164656957465313506, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14944,11 +14969,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: -0.7
       objectReference: {fileID: 0}
-    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
-        type: 3}
-      propertyPath: m_Name
-      value: ledge (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f, type: 3}
 --- !u!4 &6676315125408072650 stripped
@@ -14964,6 +14984,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5889066817740590326}
     m_Modifications:
+    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
+        type: 3}
+      propertyPath: m_Name
+      value: ledge (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 164656957465313506, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15028,11 +15053,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: -0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4629747243269507966, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f,
-        type: 3}
-      propertyPath: m_Name
-      value: ledge (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf0a0b50e8fd5dd4d9d4ccb2c0a9371f, type: 3}
