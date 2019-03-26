@@ -5,10 +5,16 @@ using UnityEngine.XR;
 
 public class InputManager : Singleton<InputManager> {
 
+    public override void Awake (){
+        base.Awake();
+
+    }
     public bool IsXRConnected()
     {
         return XRDevice.isPresent;
     }
+
+    bool triggerValue;
     public float GetAxisHorizontal(){
         return Input.GetAxis("Horizontal");
     }
@@ -36,6 +42,13 @@ public class InputManager : Singleton<InputManager> {
     {
         return Input.GetAxis("Mouse Y");
     }
+
+
+    public bool GetTriggerVR(){
+        return Input.GetAxis("PrimaryIndexTrigger")>0.5f;
+    }
+
+
 
     public enum MiniGameButtons{
         BUTTON1,

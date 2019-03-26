@@ -1,4 +1,4 @@
-﻿#define TEMP_INPUTS
+﻿//#define TEMP_INPUTS
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -72,7 +72,7 @@ public class CraneMovement : MonoBehaviour
         else if (mesh_Arm.transform.rotation.eulerAngles.z < 289)
             mesh_Arm.transform.rotation = Quaternion.Euler(new Vector3(mesh_Arm.transform.rotation.eulerAngles.x, mesh_Arm.transform.rotation.eulerAngles.y, 289));
 
-        Debug.Log(craneArm.transform.localRotation.eulerAngles);
+        //Debug.Log(craneArm.transform.localRotation.eulerAngles);
 
 
         //Upper Crane rotation
@@ -90,6 +90,10 @@ public class CraneMovement : MonoBehaviour
         leftAxis = rightAxis = 0;
         armCraneLateralRotationAxis = 0;
         armCraneAxis = 0;
+
+        if(InputManager.Instance.GetTriggerVR()){
+            Debug.Log("Pressed the trigger button");
+        }
 
         //TEMP INPUTS, here we will manage with the levers the value of each axis variable
 
