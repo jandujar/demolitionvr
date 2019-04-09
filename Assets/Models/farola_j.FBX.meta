@@ -4,12 +4,39 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cylinder001
+    100004: plantilla
     400000: //RootNode
+    400002: Cylinder001
+    400004: plantilla
     2100000: No Name
+    2100002: 01 - Default
+    2100004: 07 - Default
     2300000: //RootNode
+    2300002: Cylinder001
+    2300004: plantilla
     3300000: //RootNode
+    3300002: Cylinder001
+    3300004: plantilla
     4300000: Cylinder001
-  externalObjects: {}
+    4300002: plantilla
+    4300004: Farola
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 5b4fa7665fc77cc49810b4bda90bd516, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 07 - Default
+    second: {fileID: 2100000, guid: f6ac61459f9c13a41b518307cab7605b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: cdc72b2d280dfda4f828e22be6911806, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
