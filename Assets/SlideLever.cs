@@ -29,6 +29,7 @@ public class SlideLever : MonoBehaviour
 
     private void Start()
     {
+        controllerTransform = null;
         maxZ = maxPoint.localPosition.z;
         minZ = minPoint.localPosition.z;
         anchorPoints[0] = minZ;
@@ -59,9 +60,9 @@ public class SlideLever : MonoBehaviour
     public void Update()
     {
         
-        //position = valueLever * maxZ;
-        //lever.transform.localPosition = new Vector3(lever.transform.localPosition.x, lever.transform.localPosition.y,position);
-        
+        position = valueLever * maxZ;
+        lever.transform.localPosition = new Vector3(lever.transform.localPosition.x, lever.transform.localPosition.y,position);
+     
         //If the user is "grabbing" the lever
         if (controllerTransform != null)
         {
@@ -100,8 +101,10 @@ public class SlideLever : MonoBehaviour
         if(other.gameObject.tag == "Hand"){
             
             if(InputManager.Instance.GetTriggerVRRightHand()){
-                controllerTransform.position = other.gameObject.transform.position;
-                controllerTransform.rotation = other.gameObject.transform.rotation;
+                controllerTransform = other.gameObject.transform;
+
+                //controllerTransform.position = other.gameObject.transform.position;
+                //controllerTransform.rotation = other.gameObject.transform.rotation;
             }
         }
     }
