@@ -22,8 +22,8 @@ public class CraneMovement : MonoBehaviour
 
     float leftAxis, rightAxis, armCraneLateralRotationAxis, armCraneAxis;
     float leftWheelMovement, rightWheelMovement;
-    
 
+    AudioSource engineAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +42,8 @@ public class CraneMovement : MonoBehaviour
 
         if (mesh_Arm == null)
             Crane = transform.Find("Arm_mesh").transform;
+
+        engineAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -49,6 +51,28 @@ public class CraneMovement : MonoBehaviour
     {
         UpdateLeverInputs();
         UpdateMovements();
+        if(leftAxis == 0 && rightAxis == 0)
+        {
+            if (armCraneLateralRotationAxis == 0 && armCraneAxis == 0)
+                engineAudio.pitch = 1;
+            else
+                engineAudio.pitch = 1.05f;
+        }
+        else if((leftAxis == 0 && rightAxis != 0) || rightAxis == 0 && leftAxis != 0)
+        {
+            if(armCraneLateralRotationAxis == 0 && armCraneAxis == 0)
+            engineAudio.pitch = 1.05f; 
+            else
+                engineAudio.pitch = 1.1f;
+
+        }
+        else
+        {
+            if (armCraneLateralRotationAxis == 0 && armCraneAxis == 0)
+                engineAudio.pitch = 1.1f;
+            else
+                engineAudio.pitch = 1.15f;
+        }
     }
 
     private void UpdateMovements()

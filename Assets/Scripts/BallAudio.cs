@@ -16,12 +16,20 @@ public class BallAudio : MonoBehaviour
         {
             audioIsPlaying = true;
             AudioManager.Instance.PlayAudio(ballAudios[0], transform);
-            StartCoroutine(AudioTimer());
+            StartCoroutine(AudioTimer(0));
+        }
+        if ((collision.gameObject.name.Contains("Valla") || collision.gameObject.name.Contains("Viga") 
+            || collision.gameObject.name.Contains("Farola") || collision.gameObject.name.Contains("Barrel") 
+            || collision.gameObject.name.Contains("Pipe")) && !audioIsPlaying)
+        {
+            audioIsPlaying = true;
+            AudioManager.Instance.PlayAudio(ballAudios[1], transform);
+            StartCoroutine(AudioTimer(1));
         }
     }
-    IEnumerator AudioTimer()
+    IEnumerator AudioTimer(int _audio)
     {
-        yield return new WaitForSeconds(ballAudios[0].length);
+        yield return new WaitForSeconds(ballAudios[_audio].length);
         audioIsPlaying = false;
     }
 }
