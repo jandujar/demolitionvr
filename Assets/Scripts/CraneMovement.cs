@@ -116,26 +116,30 @@ public class CraneMovement : MonoBehaviour
         armCraneAxis = 0;
 
         //TEMP INPUTS, here we will manage with the levers the value of each axis variable
+        if(!InputManager.Instance.IsXRConnected())
+        {
+            leftAxis = InputManager.Instance.GetAxisVertical();
+            rightAxis = InputManager.Instance.GetAxisVertical2();
 
-#if TEMP_INPUTS
-        leftAxis = InputManager.Instance.GetAxisVertical();
-        rightAxis = InputManager.Instance.GetAxisVertical2();
+            if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON1))
+                armCraneLateralRotationAxis = 1;
+            else if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON2))
+                armCraneLateralRotationAxis = -1;
 
-        if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON1))
-            armCraneLateralRotationAxis = 1;
-        else if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON2))
-            armCraneLateralRotationAxis = -1;
+            if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON3))
+                armCraneAxis = 1;
+            else if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON4))
+                armCraneAxis = -1;
+        }
 
-        if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON3))
-            armCraneAxis = 1;
-        else if (InputManager.Instance.GetButton(InputManager.MiniGameButtons.BUTTON4))
-            armCraneAxis = -1;
-#else
-        rightAxis = leverRightMovement.GetComponent<SlideLever>().valueLever;
-        leftAxis = leverLeftMovement.GetComponent<SlideLever>().valueLever;
-        armCraneLateralRotationAxis = leverCraneTrasversalMovement.GetComponent<SlideLever>().valueLever;
-        armCraneAxis = leverCraneHeight.GetComponent<SlideLever>().valueLever;
-#endif
+        else
+        {
+            rightAxis = leverRightMovement.GetComponent<SlideLever>().valueLever;
+            leftAxis = leverLeftMovement.GetComponent<SlideLever>().valueLever;
+            armCraneLateralRotationAxis = leverCraneTrasversalMovement.GetComponent<SlideLever>().valueLever;
+            armCraneAxis = leverCraneHeight.GetComponent<SlideLever>().valueLever;
+        }
+
         if (rightAxis > 1.0f)
             rightAxis = 1.0f;
         else if (rightAxis < -1.0f)
