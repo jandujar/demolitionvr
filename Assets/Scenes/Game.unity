@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11863,6 +11863,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d770b2b6c3103e4194bcbbdfabcbd91, type: 3}
+--- !u!1 &798515738 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1664497260854004763, guid: 7d770b2b6c3103e4194bcbbdfabcbd91,
+    type: 3}
+  m_PrefabInstance: {fileID: 798515737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &798515739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4954001970067993533, guid: 7d770b2b6c3103e4194bcbbdfabcbd91,
+    type: 3}
+  m_PrefabInstance: {fileID: 798515737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &798515740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7695475341946537515, guid: 7d770b2b6c3103e4194bcbbdfabcbd91,
+    type: 3}
+  m_PrefabInstance: {fileID: 798515737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!45 &798515741
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798515738}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
+--- !u!45 &798515742
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798515739}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
+--- !u!45 &798515743
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798515740}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 71f14a2d79f732f4d9893ef1b911f4ff, type: 2}
 --- !u!1001 &810464529
 PrefabInstance:
   m_ObjectHideFlags: 0
