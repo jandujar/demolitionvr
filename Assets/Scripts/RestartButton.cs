@@ -5,12 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class RestartButton : MonoBehaviour
 {
+
+    public string sceneToGo = null;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Hand")
         {
-            SceneManager.LoadScene("Menu");
+            Debug.Log(sceneToGo);
+            SceneManager.LoadScene(sceneToGo);
         }
     }
 }

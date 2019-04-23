@@ -662,14 +662,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd65cfd2a1ba8042bc278fb582534bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickGrab:
-    actionPath: 
-    needsReinit: 0
-  controller: {fileID: 0}
   lever: {fileID: 3916632567081010671}
   maxPoint: {fileID: 4978241112276590454}
   minPoint: {fileID: 95323934849039897}
   snapDistance: 0.05
+  controllerTransform: {fileID: 0}
   valueLever: 0
   position: 0
 --- !u!1 &4044357431012992288
@@ -1146,14 +1143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd65cfd2a1ba8042bc278fb582534bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickGrab:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
-  controller: {fileID: 0}
   lever: {fileID: 1692138920335331214}
   maxPoint: {fileID: 5641332858512519698}
   minPoint: {fileID: 8091857296388398305}
   snapDistance: 0.05
+  controllerTransform: {fileID: 0}
   valueLever: 0
   position: 0
 --- !u!1 &6168293383924102936
@@ -1351,15 +1345,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6738547119504059388}
-  m_LocalRotation: {x: -0, y: -0, z: 0.000000029802322, w: 1}
-  m_LocalPosition: {x: 0.40589905, y: 6.367134, z: 0}
+  m_LocalRotation: {x: -0.000000029802322, y: -0, z: 0.6391851, w: 0.7690529}
+  m_LocalPosition: {x: -2.27, y: 6.23, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5044185167429837701}
   - {fileID: 4492605806993316180}
   m_Father: {fileID: 3031443499380624197}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 79.462006}
 --- !u!33 &1663627057993889382
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1906,14 +1900,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd65cfd2a1ba8042bc278fb582534bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickGrab:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
-  controller: {fileID: 0}
   lever: {fileID: 2762451338139293964}
   maxPoint: {fileID: 2251712182112912932}
   minPoint: {fileID: 6013054741582471463}
   snapDistance: 0.05
+  controllerTransform: {fileID: 0}
   valueLever: 0
   position: 0
 --- !u!1 &8602638042592791751
@@ -1963,14 +1954,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd65cfd2a1ba8042bc278fb582534bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickGrab:
-    actionPath: /actions/default/in/GrabGrip
-    needsReinit: 0
-  controller: {fileID: 0}
   lever: {fileID: 4764458342457822709}
   maxPoint: {fileID: 8096758681688350}
   minPoint: {fileID: 1257307236121716866}
   snapDistance: 0.05
+  controllerTransform: {fileID: 0}
   valueLever: 0
   position: 0
 --- !u!1 &8878520225008917700

@@ -111,7 +111,7 @@ public class SlideLever : MonoBehaviour
         if(other.gameObject.tag == "Hand"){
             SnapToPosition();
             controllerTransform = null;
-            
+            valueLever = 0;
             
         }
     }
