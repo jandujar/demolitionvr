@@ -145,7 +145,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -10.859994, y: 14.140046, z: -0.000019746421}
+  m_ConnectedAnchor: {x: -10.859988, y: 14.140046, z: -0.000019746421}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -229,7 +229,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.023299012, y: 0.018788729, z: -0.10371497}
+  m_ConnectedAnchor: {x: 8.035346, y: 5.7679567, z: 1.6611907}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2044,8 +2044,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5492557691198976076}
   m_LocalRotation: {x: 0.000000089406946, y: 0.64278764, z: 0.76604444, w: 0.00000005960463}
-  m_LocalPosition: {x: 4.14, y: -0.27, z: 2.35}
-  m_LocalScale: {x: 1, y: 1.014622, z: 1.0146239}
+  m_LocalPosition: {x: 4.48, y: -0.27, z: 2.35}
+  m_LocalScale: {x: 0.32811, y: 0.33290762, z: 0.33290824}
   m_Children: []
   m_Father: {fileID: 5236687442833809708}
   m_RootOrder: 0
@@ -2067,7 +2067,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: ae5c96c114823f64d92546bb71938d05, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2101,11 +2101,11 @@ TextMesh:
   m_LineSpacing: 1
   m_Anchor: 0
   m_Alignment: 0
-  m_TabSize: 4
-  m_FontSize: 0
+  m_TabSize: 10
+  m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 6d82257e767f662438b2bb8d804dad09, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
@@ -2492,7 +2492,7 @@ Transform:
   m_GameObject: {fileID: 7798851418557736653}
   m_LocalRotation: {x: 0, y: 0.6427877, z: 0.7660444, w: -0}
   m_LocalPosition: {x: 1.71, y: -0.27, z: 2.35}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.34828, y: 0.34828, z: 0.34828}
   m_Children: []
   m_Father: {fileID: 264103488936243043}
   m_RootOrder: 0
@@ -2514,7 +2514,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: ae5c96c114823f64d92546bb71938d05, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2549,10 +2549,10 @@ TextMesh:
   m_Anchor: 0
   m_Alignment: 0
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 40
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 6d82257e767f662438b2bb8d804dad09, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
