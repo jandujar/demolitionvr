@@ -21,7 +21,7 @@ public class BreakTitleMenu : MonoBehaviour {
         }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
         }
         if (InputManager.Instance.GetAnyButtonDown())
         {
