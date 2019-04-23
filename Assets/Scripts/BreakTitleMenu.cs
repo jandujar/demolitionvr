@@ -19,6 +19,10 @@ public class BreakTitleMenu : MonoBehaviour {
         if (moveBall) {
             breakWall();
         }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         if (InputManager.Instance.GetAnyButtonDown())
         {
             moveBall = true;

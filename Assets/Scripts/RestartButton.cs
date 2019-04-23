@@ -10,8 +10,7 @@ public class RestartButton : MonoBehaviour
     {
         if(other.gameObject.tag == "Hand")
         {
-            Debug.Log("ReloadScene");
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("Menu");
         }
     }
 }

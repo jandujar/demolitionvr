@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CraneMovement : MonoBehaviour
 {
@@ -114,6 +115,11 @@ public class CraneMovement : MonoBehaviour
         leftAxis = rightAxis = 0;
         armCraneLateralRotationAxis = 0;
         armCraneAxis = 0;
+
+        if(InputManager.Instance.GetButtonDown(InputManager.MiniGameButtons.BUTTON_START))
+        {
+            SceneManager.LoadScene("Menu");
+        }
 
         //TEMP INPUTS, here we will manage with the levers the value of each axis variable
         if(!InputManager.Instance.IsXRConnected())
