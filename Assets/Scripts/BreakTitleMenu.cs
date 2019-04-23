@@ -19,7 +19,7 @@ public class BreakTitleMenu : MonoBehaviour {
         if (moveBall) {
             breakWall();
         }
-        if (Input.GetAxis("JRH") != 0 || Input.GetAxis("JRV") != 0)
+        if (InputManager.Instance.GetAnyButtonDown())
         {
             moveBall = true;
         }
