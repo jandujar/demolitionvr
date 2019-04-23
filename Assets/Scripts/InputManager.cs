@@ -15,6 +15,19 @@ public class InputManager : Singleton<InputManager> {
     }
 
     bool triggerValue;
+
+    public bool GetAnyButtonDown()
+    {
+        if (IsXRConnected())
+        {
+            return GetTriggerVRLeftHand() || GetTriggerVRRightHand();
+        }
+        else
+        {
+            return GetButtonDown(MiniGameButtons.BUTTON1) || GetButtonDown(MiniGameButtons.BUTTON2);
+        }
+    }
+
     public float GetAxisHorizontal(){
         return Input.GetAxis("Horizontal");
     }
